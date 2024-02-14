@@ -36,3 +36,22 @@
     transform: rotate(360deg);
   }
 }
+
+/*custom css */
+
+.app-navbar {
+  background: #8989ca;
+  padding: 20px;
+}
+.app-content{
+  background: beige;
+  height: 100vh;
+}
+.app-random{
+  background: green;
+  padding: 50px;
+}
+.app-results{
+  background: #a5bb88;
+  height: 50vh;
+}
