@@ -1,18 +1,18 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-
-import TopBarComponent from './Components/TopBarComponents';
-import HomePage from './pages/HomePage';
+import { HomePage } from '../src/pages/HomePage';
+import { MealPage } from '../src/pages/MealPage';
 
 
 function App() {
   return (
-      <>
-      <TopBarComponent/>
-      <div className="d-flex container-fluid">
-      <HomePage />
-      </div>
-    </>
-  )
-}
+    <BrowserRouter basename='/'>
+      <Routes>
+        <Route path='*' element={<HomePage />} />
+        <Route path="/meals/:id" element={<MealPage />} />
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;

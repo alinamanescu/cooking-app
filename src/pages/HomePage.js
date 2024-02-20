@@ -2,19 +2,25 @@ import React from 'react'
 import MealsContainer from '../containers/MealsContainer';
 import RandomMealsContainer from '../containers/RandomMealsContainer';
 import SideBarContainer from '../containers/SideBarContainer';
+import TopBarComponent from '../Components/TopBarComponents';
 
 const HomePage = () => {
   return (
     <>
-    <SideBarContainer />
-    <div className="container">
-        <div className="p-4">
-        <RandomMealsContainer/>
-        <MealsContainer />
-  </div>
-</div>
+      <TopBarComponent/>
+      <div className="d-flex container-fluid">
+        <div>
+          <SideBarContainer />
+          <div className="container">
+            <div className="p-4">
+              <RandomMealsContainer/>
+              <MealsContainer />
+            </div>
+          </div>
+        </div>
+      </div>
     </>
   );
 };
 
-export default HomePage;
+export { HomePage };
