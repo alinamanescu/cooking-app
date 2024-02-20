@@ -1,7 +1,14 @@
 import React from "react";
 
+const titleStyle = {
+    fontWeight: 700,
+    letterSpacing: -0.5,
+    fontSize: "28px",
+};
+
 const TextComponent = (props) => {
-    return <p className="pb-2 border-bottom text-subtle lead">{props.text}</p>;
+    return <p style={titleStyle} className="pb-2 border-bottom text-subtle lead">
+        {props.text}</p>;
 };
 
 export default TextComponent;

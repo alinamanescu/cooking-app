@@ -1,19 +1,15 @@
 import './App.css';
 
-import SearchInput from './Components/SearchInput';
-import MealsContainer from './containers/MealsContainer';
-import RandomMealsContainer from './containers/RandomMealsContainer';
+import TopBarComponent from './Components/TopBarComponents';
+import HomePage from './pages/HomePage';
 
 
 function App() {
   return (
-      <><SearchInput/>
-      <div className="container">
-
-        <div className="">
-          <RandomMealsContainer/>
-          <MealsContainer />
-        </div>
+      <>
+      <TopBarComponent/>
+      <div className="d-flex container-fluid">
+      <HomePage />
       </div>
     </>
   )

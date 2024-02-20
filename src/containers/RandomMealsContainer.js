@@ -1,6 +1,6 @@
 import React from 'react';
 import TextComponent from '../Components/TextComponent';
-import RandomMealComponent from '../Components/MealComponent';
+import RandomMealComponent from '../Components/RandomMealComponent';
 
 const RandomMealsContainer = () => {
   return (
