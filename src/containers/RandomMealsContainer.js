@@ -5,7 +5,7 @@ import RandomMealComponent from '../Components/RandomMealComponent';
 const RandomMealsContainer = () => {
   return (
     <>
-            <TextComponent text="Random Meals Area" />
+            <TextComponent text="Try something new" />
             
             <div className="row row-cols-2 row-cols-lg-3 align-items-stretch g-4 py-5">
               <RandomMealComponent/>

@@ -1,8 +1,12 @@
 import React from "react";
 
-const SearchInput = () => {
+const SearchInput = ({ searchValue, handleInputChange }) => {
     return (
-        <input className="form-control w-50 border-top-0" type="search" placeholder="Search" aria-label="Search"></input>
+        <input onChange={handleInputChange} 
+        value={searchValue}
+        type="text" 
+        className="form-control w-50"
+        placeholder="Search meal"/>
     );
 };
 

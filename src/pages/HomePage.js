@@ -9,8 +9,8 @@ const HomePage = () => {
     <>
       <TopBarComponent/>
       <div className="d-flex container-fluid">
-        <div>
           <SideBarContainer />
+
           <div className="container">
             <div className="p-4">
               <RandomMealsContainer/>
@@ -18,7 +18,6 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   );
 };

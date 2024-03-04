@@ -7,8 +7,11 @@ const titleStyle = {
 };
 
 const TextComponent = (props) => {
-    return <p style={titleStyle} className="pb-2 border-bottom text-subtle lead">
-        {props.text}</p>;
+    return (
+        <p style={titleStyle} className="pb-2 border-bottom text-subtle">
+        {props.text}
+        </p>
+    );
 };
 
 export default TextComponent;

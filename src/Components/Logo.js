@@ -2,12 +2,10 @@ import React from "react";
 
 const Logo = () => {
     return (
-        <div className="bg-light p-3">
-            <div className="container d-flex">
-            <p className='text-primary ps-2 pe-2'>Cooking App</p>
-            </div>
-        </div>
-    )
-}
+        <h1 className="align-self-center mb-0 text-primary ps-2 pe-2 lead font-monospace text-nowrap d-flex align-center">
+            Cooking App
+        </h1>
+    );
+};
 
 export default Logo;

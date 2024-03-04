@@ -1,6 +1,6 @@
 import React from "react";
-import SearchInput from "../Components/SearchInput";
 import Logo from "../Components/Logo";
+import SearchInput from "./SearchInput";
 import { ActionsContainer } from "../containers/ActionsContainer";
 
 const TopBarComponent = () => {
